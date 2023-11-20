@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2adczVOjlcMvIxNF6lxvzvoGDo3FeSMf3yr9EhSKtnN61R2ad0Ei4y/4onPTjgx3rNfDSMGOGserUBDbmkhivQ==",
+  "dgSpecHash": "4Ri8/rDwMvHyc7v8wLpRz2KmUg3236E9/cMBfXwNliFXlhUrW48BqT5Dmrvn8ThlWdm6N0MDMX8c4/RnTEXJtg==",
   "success": true,
-  "projectFilePath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Services\\Services.csproj",
+  "projectFilePath": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Services\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnet.mvc\\4.0.20710\\microsoft.aspnet.mvc.4.0.20710.nupkg.sha512",

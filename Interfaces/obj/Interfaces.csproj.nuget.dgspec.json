@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj": {}
+    "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Interfaces\\Interfaces.csproj": {}
   },
   "projects": {
-    "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj": {
+    "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj",
+        "projectPath": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\obj\\",
+        "outputPath": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

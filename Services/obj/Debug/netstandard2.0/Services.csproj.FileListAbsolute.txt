@@ -22,3 +22,15 @@ E:\Programming\Projects\XmlToJsonConvertor\Services\obj\Debug\netstandard2.0\Ser
 E:\Programming\Projects\XmlToJsonConvertor\Services\obj\Debug\netstandard2.0\Services.csproj.CopyComplete
 E:\Programming\Projects\XmlToJsonConvertor\Services\obj\Debug\netstandard2.0\Services.dll
 E:\Programming\Projects\XmlToJsonConvertor\Services\obj\Debug\netstandard2.0\Services.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\bin\Debug\netstandard2.0\Services.deps.json
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\bin\Debug\netstandard2.0\Services.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\bin\Debug\netstandard2.0\Services.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\bin\Debug\netstandard2.0\Interfaces.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\bin\Debug\netstandard2.0\Interfaces.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.csprojAssemblyReference.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.AssemblyInfoInputs.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.AssemblyInfo.cs
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.csproj.CoreCompileInputs.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.csproj.CopyComplete
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Services\obj\Debug\netstandard2.0\Services.pdb

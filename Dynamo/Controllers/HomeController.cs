@@ -1,5 +1,5 @@
-﻿using Dynamo_task.Models;
-using Interfaces;
+﻿using Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web;
@@ -9,11 +9,11 @@ namespace Dynamo_task.Controllers
 {
 	public class HomeController: Controller
 	{
-		private readonly IConversionService mainService;
+		private readonly IConversionService conversionService;
 
-		public HomeController(IConversionService mainService)
+		public HomeController(IConversionService conversionService)
 		{
-			this.mainService = mainService;
+			this.conversionService = conversionService;
 		}
 
 		public ActionResult Index()
@@ -24,9 +24,25 @@ namespace Dynamo_task.Controllers
 		[HttpPost]
 		public async Task<ActionResult> Index(IEnumerable<HttpPostedFileBase> models, string filePath)
 		{
+			var success = true;
+
 			foreach (var file in models)
 			{
-				await this.mainService.ProcessUploadedFile(file.FileName, filePath, file.InputStream);
+				try
+				{
+					success = await this.conversionService.ProcessUploadedFile(file.FileName, filePath, file.InputStream);
+				}
+				catch (Exception ex)
+				{
+					success = false;
+
+					TempData["Error"] = ex.Message;
+				}
+			}
+
+			if (success)
+			{
+				TempData["Success"] = "Operation successful!";
 			}
 
 			return View();

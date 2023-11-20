@@ -16,3 +16,12 @@ E:\Programming\Projects\XmlToJsonConvertor\Interfaces\obj\Debug\netstandard2.0\I
 E:\Programming\Projects\XmlToJsonConvertor\Interfaces\obj\Debug\netstandard2.0\Interfaces.csproj.CoreCompileInputs.cache
 E:\Programming\Projects\XmlToJsonConvertor\Interfaces\obj\Debug\netstandard2.0\Interfaces.dll
 E:\Programming\Projects\XmlToJsonConvertor\Interfaces\obj\Debug\netstandard2.0\Interfaces.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\bin\Debug\netstandard2.0\Interfaces.deps.json
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\bin\Debug\netstandard2.0\Interfaces.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\bin\Debug\netstandard2.0\Interfaces.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.csprojAssemblyReference.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.AssemblyInfoInputs.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.AssemblyInfo.cs
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.csproj.CoreCompileInputs.cache
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Interfaces\obj\Debug\netstandard2.0\Interfaces.pdb

@@ -157,16 +157,6 @@
         "runtime": {
           "lib/net45/Unity.Mvc4.dll": {}
         }
-      },
-      "Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Interfaces.dll": {}
-        }
       }
     }
   },
@@ -501,16 +491,10 @@
         "unity.mvc4.1.6.0.nupkg.sha512",
         "unity.mvc4.nuspec"
       ]
-    },
-    "Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../Interfaces/Interfaces.csproj",
-      "msbuildProject": "../Interfaces/Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Interfaces >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.3",
       "Unity.Mvc4 >= 1.6.0"
@@ -522,11 +506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Services\\Services.csproj",
-      "projectName": "Services",
-      "projectPath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Services\\Services.csproj",
+      "projectUniqueName": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Services\\Data.csproj",
+      "projectName": "Data",
+      "projectPath": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Services\\Data.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Services\\obj\\",
+      "outputPath": "E:\\Programming\\Projects\\XmlToJsonConverter\\XmlToJsonConverter\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -541,11 +525,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj": {
-              "projectPath": "E:\\Programming\\Projects\\XmlToJsonConvertor\\Interfaces\\Interfaces.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

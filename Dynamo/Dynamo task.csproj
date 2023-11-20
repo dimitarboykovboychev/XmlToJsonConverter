@@ -153,7 +153,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\UploadXMLModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,13 +199,9 @@
     <Content Include="Content\Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
-      <Project>{0c0d9dc9-d668-4093-98c4-9059263048fc}</Project>
-      <Name>Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\Services.csproj">
+    <ProjectReference Include="..\Services\Data.csproj">
       <Project>{D226733E-34E8-496F-A759-7C6C3540DFDF}</Project>
-      <Name>Services</Name>
+      <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
