@@ -1,35 +1,42 @@
-﻿using Interfaces;
-using System.IO;
+﻿using System.IO;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Text;
 using System.Xml;
+using Data.Interfaces;
 
 namespace Data.Services
 {
 	public class ConversionService: IConversionService
 	{
+		private readonly IApiCaller apiCaller;
+
+		public ConversionService(IApiCaller apiCaller)
+		{
+			this.apiCaller = apiCaller;
+		}
+
 		public async Task<bool> ProcessUploadedFile(string fileName, string path, Stream stream)
 		{
-			var response = new HttpResponseMessage();
 			var content = this.StreamToString(stream);
 
-			this.ValidateXML(content);
+			if(!this.ValidateXML(content))
+			{
+				throw new System.Exception(Constants.InvalidXMLException);
+			}
 
 			var httpContent = new StringContent(content, Encoding.UTF8, "application/xml");
 
-			using(var client = new HttpClient())
+			var response = await apiCaller.CallApi(httpContent);
+			
+			if(response.IsSuccessStatusCode)
 			{
-				response = await client.PostAsync(Constants.ApiUrl, httpContent);
+				var json = await response.Content.ReadAsStringAsync();
+				var fullPath = Path.Combine(path, Path.ChangeExtension(fileName, Constants.JsonExtension));
 
-				if(response.IsSuccessStatusCode)
-				{
-					var json = await response.Content.ReadAsStringAsync();
+				new Utilities.Utilities().TrimXMLTags(ref json);
 
-					var fullPath = Path.Combine(path, Path.ChangeExtension(fileName, Constants.JsonExtension));
-
-					System.IO.File.WriteAllText(fullPath, json.Replace("<string>", string.Empty).Replace("</string>", string.Empty));
-				}
+				System.IO.File.WriteAllText(fullPath, json);
 			}
 
 			return response.IsSuccessStatusCode;
@@ -43,7 +50,7 @@ namespace Data.Services
 			}
 		}
 
-		private void ValidateXML(string content)
+		private bool ValidateXML(string content)
 		{
 			try
 			{
@@ -52,8 +59,10 @@ namespace Data.Services
 			}
 			catch
 			{
-				throw new System.Exception("Invalid XML!");
+				return false;
 			}
+
+			return true;
 		}
 	}
 }

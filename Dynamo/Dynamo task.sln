@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\Services\Data.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToJsonAPI", "..\XmlToJsonAPI\XmlToJsonAPI.csproj", "{A72A6AD9-ECC9-4ABD-8F92-CBF660F88FC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{481FF14C-CAD9-46DD-BE1F-1611A223A2F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A72A6AD9-ECC9-4ABD-8F92-CBF660F88FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A72A6AD9-ECC9-4ABD-8F92-CBF660F88FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A72A6AD9-ECC9-4ABD-8F92-CBF660F88FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481FF14C-CAD9-46DD-BE1F-1611A223A2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481FF14C-CAD9-46DD-BE1F-1611A223A2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481FF14C-CAD9-46DD-BE1F-1611A223A2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481FF14C-CAD9-46DD-BE1F-1611A223A2F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

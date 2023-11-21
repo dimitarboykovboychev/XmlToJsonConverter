@@ -1,8 +1,8 @@
 using System.Web.Mvc;
-using Interfaces;
 using Microsoft.Practices.Unity;
 using Data.Services;
 using Unity.Mvc4;
+using Data.Interfaces;
 
 namespace Dynamo_task
 {
@@ -29,6 +29,7 @@ namespace Dynamo_task
 		public static void RegisterTypes(IUnityContainer container)
 		{
 			container.RegisterType<IConversionService, ConversionService>();
+			container.RegisterType<IApiCaller, ApiCaller>();
 		}
 	}
 }
