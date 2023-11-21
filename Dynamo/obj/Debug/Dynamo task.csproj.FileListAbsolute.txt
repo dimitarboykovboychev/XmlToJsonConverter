@@ -302,3 +302,10 @@ E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\obj\Debug\D
 E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\obj\Debug\Dynamo task.pdb
 E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\Data.dll
 E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\Data.pdb
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\log4net.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\log4net.xml
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\System.Net.Http.Extensions.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\System.Net.Http.Primitives.dll
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\System.Net.Http.Extensions.xml
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\bin\System.Net.Http.Primitives.xml
+E:\Programming\Projects\XmlToJsonConverter\XmlToJsonConverter\Dynamo\obj\Debug\Dynamo task.csproj.App.config

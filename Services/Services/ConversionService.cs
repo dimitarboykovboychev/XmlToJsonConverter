@@ -1,5 +1,4 @@
 ﻿using Interfaces;
-using Newtonsoft.Json;
 using System.IO;
 using System.Threading.Tasks;
 using System.Net.Http;
@@ -12,14 +11,10 @@ namespace Data.Services
 	{
 		public async Task<bool> ProcessUploadedFile(string fileName, string path, Stream stream)
 		{
-			//var validationStream = new MemoryStream();
-
-			//await stream.CopyToAsync(validationStream);
-
-			this.ValidateXML(stream);
-
 			var response = new HttpResponseMessage();
 			var content = this.StreamToString(stream);
+
+			this.ValidateXML(content);
 
 			var httpContent = new StringContent(content, Encoding.UTF8, "application/xml");
 
@@ -29,12 +24,11 @@ namespace Data.Services
 
 				if(response.IsSuccessStatusCode)
 				{
-					var responseContent = await response.Content.ReadAsStringAsync();
+					var json = await response.Content.ReadAsStringAsync();
 
-					var json = JsonConvert.SerializeObject(responseContent);
 					var fullPath = Path.Combine(path, Path.ChangeExtension(fileName, Constants.JsonExtension));
 
-					System.IO.File.WriteAllText(fullPath, json);
+					System.IO.File.WriteAllText(fullPath, json.Replace("<string>", string.Empty).Replace("</string>", string.Empty));
 				}
 			}
 
@@ -49,26 +43,12 @@ namespace Data.Services
 			}
 		}
 
-		private void ValidateXML(Stream validationStream)
+		private void ValidateXML(string content)
 		{
 			try
 			{
 				XmlDocument doc = new XmlDocument();
-
-				XmlReaderSettings settings = new XmlReaderSettings();
-				settings.ConformanceLevel = ConformanceLevel.Fragment;
-				settings.IgnoreWhitespace = true;
-
-				using(XmlReader reader = XmlReader.Create(validationStream, settings))
-				{
-					while(reader.Read())
-					{
-						if(reader.NodeType == XmlNodeType.Element)
-						{
-							doc.ReadNode(reader);
-						}
-					}
-				}
+				doc.LoadXml(content);
 			}
 			catch
 			{

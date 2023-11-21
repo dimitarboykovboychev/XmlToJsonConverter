@@ -5,5 +5,7 @@
 		public const string ApiUrl = "http://localhost:44343/api/values";
 
 		public const string JsonExtension = ".json";
+
+		public const string SuccessMessage = "Operation successful!";
 	}
 }

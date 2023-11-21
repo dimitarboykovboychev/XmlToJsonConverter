@@ -1,4 +1,6 @@
-﻿using Interfaces;
+﻿using Data;
+using Data.Logging;
+using Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -36,13 +38,17 @@ namespace Dynamo_task.Controllers
 				{
 					success = false;
 
+					Log.Error(ex.Message, ex);
+
 					TempData["Error"] = ex.Message;
 				}
 			}
 
 			if (success)
 			{
-				TempData["Success"] = "Operation successful!";
+				Log.Info(Constants.SuccessMessage);
+
+				TempData["Success"] = Constants.SuccessMessage;
 			}
 
 			return View();

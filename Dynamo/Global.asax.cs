@@ -14,6 +14,8 @@ namespace Dynamo_task
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+			log4net.Config.XmlConfigurator.Configure();
+
 			Bootstrapper.Initialise();
 		}
 
