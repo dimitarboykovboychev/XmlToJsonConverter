@@ -36,7 +36,18 @@ namespace Data.Services
 
 				new Utilities.Utilities().TrimXMLTags(ref json);
 
-				System.IO.File.WriteAllText(fullPath, json);
+				try
+				{
+					System.IO.File.WriteAllText(fullPath, json);
+				}
+				catch
+				{
+					throw new System.Exception(Constants.FileSystemErrorException);
+				}
+			}
+			else
+			{
+				throw new System.Exception(Constants.InternalServerErrorException);
 			}
 
 			return response.IsSuccessStatusCode;

@@ -19,5 +19,9 @@
 		public const string ValidJson = "{\"note\":{\"to\":\"Tommy\",\"from\":\"Jani\",\"heading\":\"Reminder\",\"body\":\"Don't forget me this weekend!\"}}";
 
 		public const string InvalidXMLException = "Invalid XML!";
+
+		public const string InternalServerErrorException = "Internal server error!";
+
+		public const string FileSystemErrorException = "File system error! Check destination folder!";
 	}
 }
