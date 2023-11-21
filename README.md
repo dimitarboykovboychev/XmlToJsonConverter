@@ -7,13 +7,14 @@
 
 #### **To build and run the project, one needs to:**
 
-1. Clone the project's repository locally
+1. Clone the project's repository locally.
+   Note: You may need to restart Visual Studio after cloning the repository.
 
-2. Open the project's Dynamo.sln with Visual Studio
+3. Open the project's Dynamo task.sln (in Dynamo folder) with Visual Studio
 
-3. Run the application
+4. Run the application. This will open two browser windows - for the Web app interface, and for the Web API.
 
-4. Explore the web app - select and upload multiple XML files, select a target directory and find the converted to JSON format files there
+5. Explore the web app - select and upload multiple XML files, select a target directory and find the converted to JSON format files there
 
 <br />
 
